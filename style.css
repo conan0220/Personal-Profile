@@ -1,0 +1,121 @@
+body {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("img/鐵路.jpg");
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-size: 28px;
+    width: 100%;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: rgb(213, 159, 23);
+}
+a {
+    color: rgb(255, 5, 209);
+}
+
+.title-page {
+    background-color:#015761;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+
+}
+
+.introduce-myself {
+    position: absolute;
+    font-size: 48px;
+    top: 30%;
+    left: 20%;
+}
+
+.name {
+    font-size: 114px;
+}
+
+.menu {
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0;
+    overflow: hidden;
+    background-color:#333333;
+    width: 100%;
+}
+
+.menu ul li {
+    float: left;
+    display: inline;
+}
+
+.menu ul li a {
+    color: white;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    /* background-color: rgba(0, 100, 0, 1); */
+    color: #f7dc4f;
+}
+
+div.content {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    word-wrap: break-word;
+    color: white;
+    background-color: alpha(0);
+}
+
+.course-title {
+    text-decoration: none;
+    color: rgb(108, 203, 114);
+}
+
+.title {
+    font-weight: bold;
+    color: #068fff;
+}
+
+mark.highlight-yellow {
+    color: white;
+	background:linear-gradient(transparent 20%,rgba(255,255,255,0) 40%, #FFF176 50%,transparent 100%);	
+    padding: 2px 1px;
+}
+
+mark.highlight-red {
+    color: white;
+	background:linear-gradient(transparent 20%,rgba(255,255,255,0) 40%, #ff0000 50%,transparent 100%);	
+    padding: 2px 1px;
+}
+
+.color-yellow {
+    color: #f7dc4f;
+}
+
+.color-white {
+    color:white;
+}
