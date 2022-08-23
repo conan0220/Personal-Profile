@@ -24,47 +24,6 @@ a {
     color: rgb(255, 5, 209);
 }
 
-@media screen and (min-width: 0px) {
-    .Hey-Im {
-        font-size: 40px;
-    }
-
-    .HUANG-SHOU-YI {
-        font-size: 80px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .Hey-Im {
-        font-size: 4vw;
-    }
-
-    .HUANG-SHOU-YI {
-        font-size: 8vw;
-    }
-}
-
-.title-page {
-    background-color:#015761;
-    width: 100%;
-    height: 100vh;
-}
-
-.title-page .text {
-    text-align: center;
-}
-
-.introduce-myself {
-    position: absolute;
-    font-size: 48px;
-    top: 30%;
-    left: 15%;
-}
-
-.name {
-    font-size: 114px;
-}
-
 .menu {
     background-color: #333333;
     position: fixed;
