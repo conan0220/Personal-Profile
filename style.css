@@ -1,45 +1,25 @@
-/* body {
-    background-color: rgba(0, 0, 0, .6);
-    background-image: url("img/鐵路.jpg");
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    font-size: 28px;
-    width: 100%;
-} */
-
-h1 {
-    color: black;
-}
-
-h2 {
-    color: black;
-}
-
-h3 {
-    color: rgb(213, 159, 23);
-}
-a {
-    color: rgb(255, 5, 209);
-}
-
-div.content {
+.course-record {
     position: absolute;
     font-size: 28px;
-    width: 100%;
+    width: 75%;
+    left: 12.5%;
     word-wrap: break-word;
     color: white;
 }
 
+.course-record .heading {
+    font-size: 100px;
+    text-align: center;
+}
+
 .course-title {
     text-decoration: none;
-    color: rgb(108, 203, 114);
+    /* color: rgb(108, 203, 114); */
 }
 
 .title {
     font-weight: bold;
-    color: #068fff;
+    color: #f7dc4f;
 }
 
 mark.highlight-yellow {
@@ -62,13 +42,19 @@ mark.highlight-red {
     color:white;
 }
 
+.introduction {
+    background-color: #015761;
+    text-align:center;
+    font-size: 100px;
+}
+
 .navbar-nav {
-    font-size: 1.5vmax;
+    font-size: 30px;
 }
 
 .navbar-nav img {
-    width: 1.5vmax;
-    height: 1.5vmax;
+    width: 25px;
+    height: 25px;
     opacity: .5;
 }
 
@@ -89,13 +75,24 @@ mark.highlight-red {
 }
 
 @media only screen and (max-width: 980px) {
+
+    div.course-record {
+        font-size: 50px;
+    }
+
+    .introduction {
+        background-color: #015761;
+        text-align:center;
+        font-size: 160px;
+    }
+
     .navbar-nav {
-        font-size: 3vmax;
+        font-size: 60px;
     }
 
     .navbar-nav img {
-        width: 3vmax;
-        height: 3vmax;        
+        width: 50px;
+        height: 50px;        
     }
 
     .navbar-nav img:hover {

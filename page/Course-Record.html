@@ -7,6 +7,7 @@
         <title>Personal Profile</title>
         <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
         <link rel="stylesheet" href="../style.css">
+        <script src="../script.js"></script>
 
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -24,7 +25,7 @@
                             <a class="nav-link" href="#" title="About Me">Me</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="Course-Record.html" title="Course Record">Course</a>
+                            <a class="nav-link" href="course-record.html" title="Course Record">Course</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -38,93 +39,89 @@
                             <a class="nav-link" href="https://github.com/conan0220" title="GitHub" target="_blank"><img src="../img/github.png"></a>    
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#" title="Gmail"><img src="../img/gmail.png" onclick="copyToClipBoard('conanhuang8382@gmail.com')"></a>    
+                            <a class="nav-link" href="" title="Gmail"><img src="../img/gmail.png" onclick="copyToClipBoard('conanhuang8382@gmail.com')"></a>    
                         </li>
                     </ul>
                 </div>
             </nav>
         </header> 
 
-        <div class="content">
-            <h1>Course record</h1>
-            <h2>All semesters</h2>
-            <ul style="list-style-type: disc;">
-                <li><a href="#first semester of freshman">First semester of freshman</a></li>
-                <li><a href="#second semester of freshman">Second semester of freshman</a></li>
-
-            </ul>
-            <div id="first semester of freshman">
-                <h3>First semester of freshman</h3>
+        <div class="course-record">
+            <h1 class="heading">Course Record</h1><br>
+            <a href="#first semester of freshman">First semester of freshman</a><br>
+            <a href="#second semester of freshman">Second semester of freshman</a>
+            <div id="first semester of freshman"><br>
+                <h1>First semester of freshman</h1><br>
                 <p>
-                    <span class="title">Course Title:&nbsp;                        </span><a href="https://cmap.cycu.edu.tw:8443/Syllabus/CoursePreview.html?yearTerm=1101&opCode=EE609A&locale=zh_TW" class="course-title" target="_blank">英文(一)</a>       <br>
-                    <span class="title">Course Code:&nbsp;                         </span> EE609A        <br>
-                    <span class="title">Course Type:&nbsp;                         </span> Compulsory    <br>
-                    <span class="title">Credit:&nbsp;                              </span> 1             <br>
-                    <span class="title">Instructor:&nbsp;                          </span> 沈俞君         <br><br>
-                    <span class="title">Teaching Method and Reflection            </span>               <br>
-                    <p>As other teachers, one semester has quiz midterm and final exam. The end of each class, teacher usually has some activities about the day of class, you should cooperate with other students to finish the work, then you can go home. In my opinion, this teacher is pretty nice and <mark class="highlight-red">the class is also easy A's.</mark></p>
-                    <span class="title">How do I study                            </span>                <br>
-                    <p>Quiz and exam is based on article and vocabulary. Normally, quiz has one unit and exam has three units, each unit has two articles. <mark class="highlight-red">I prefer to study once a day for the week before the quiz and exam.</mark> </p>
-                    <span class="title">Score:&nbsp;                               </span> 96             <br>
-                    <span class="title">Rank:&nbsp;                                </span> 4/29           <br>
+                    <span class="title">Course Title :&nbsp;                        </span><a href="https://cmap.cycu.edu.tw:8443/Syllabus/CoursePreview.html?yearTerm=1101&opCode=EE609A&locale=zh_TW" class="course-title" target="_blank">英文(一)</a>       <br>
+                    <span class="title">Course Code :&nbsp;                         </span> EE609A        <br>
+                    <span class="title">Course Type :&nbsp;                         </span> Compulsory    <br>
+                    <span class="title">Credit :&nbsp;                              </span> 1             <br>
+                    <span class="title">Instructor :&nbsp;                          </span> 沈俞君         <br><br>
+                    <p class="title">Teaching Method and Reflection :            </p>               
+                    <p>As other teachers, one semester has quiz midterm and final exam. The end of each class, teacher usually has some activities about the day of class, you should cooperate with other students to finish the work, then you can go home. In my opinion, this teacher is pretty nice and <mark class="highlight-red">the class is also easy A's.</mark></p><br>
+                    <p class="title">How do I study :                           </p>                
+                    <p>Quiz and exam is based on article and vocabulary. Normally, quiz has one unit and exam has three units, each unit has two articles. <mark class="highlight-red">I prefer to study once a day for the week before the quiz and exam.</mark> </p><br>
+                    <span class="title">Score :&nbsp;                               </span> 96             <br>
+                    <span class="title">Rank :&nbsp;                                </span> 4/29           <br><br>
 
                     <hr>
 
-                    <span class="title">Course Title:&nbsp;                        </span><a href="https://cmap.cycu.edu.tw:8443/Syllabus/CoursePreview.html?yearTerm=1111&opCode=EL000C" class="course-title" target="_blank">自然科學與人工智慧</a>       <br>
-                    <span class="title">Course Code:&nbsp;                         </span> EL000C        <br>
+                    <span class="title">Course Title :&nbsp;                        </span><a href="https://cmap.cycu.edu.tw:8443/Syllabus/CoursePreview.html?yearTerm=1111&opCode=EL000C" class="course-title" target="_blank">自然科學與人工智慧</a>       <br>
+                    <span class="title">Course Code :&nbsp;                         </span> EL000C        <br>
                     <span class="title">Course Type:&nbsp;                         </span> Compulsory    <br>
-                    <span class="title">Credit:&nbsp;                              </span> 2             <br>
-                    <span class="title">Instructor:&nbsp;                          </span> 莊家翔         <br><br>
-                    <span class="title">Teaching Method and Reflection            </span>               <br>
-                    <p>The only thing to do is to take notes during the class. Teachers change every class. In my view, <mark class="highlight-red">this course is easy A's, but no discrimination.</mark></p>
-                    <span class="title">How do I study                            </span>                <br>
-                    <p>Just take notes attentively during the class.</p>
-                    <span class="title">Score:&nbsp;                               </span> 92             <br>
-                    <span class="title">Rank:&nbsp;                                </span> 32/59           <br>
+                    <span class="title">Credit :&nbsp;                              </span> 2             <br>
+                    <span class="title">Instructor :&nbsp;                          </span> 莊家翔         <br><br>
+                    <p class="title">Teaching Method and Reflection :            </p>               
+                    <p>The only thing to do is to take notes during the class. Teachers change every class. In my view, <mark class="highlight-red">this course is easy A's, but no discrimination.</mark></p><br>
+                    <p class="title">How do I study :                           </p>                
+                    <p>Just take notes attentively during the class.</p><br>
+                    <span class="title">Score :&nbsp;                               </span> 92             <br>
+                    <span class="title">Rank :&nbsp;                                </span> 32/59           <br><br>
 
                     <hr>
 
-                    <span class="title">Course Title:&nbsp;                        </span><a href="https://cmap.cycu.edu.tw:8443/Syllabus/CoursePreview.html?yearTerm=1111&opCode=EL052C" class="course-title" target="_blank">普通物理(一)</a>       <br>
-                    <span class="title">Course Code:&nbsp;                         </span> EL052C        <br>
-                    <span class="title">Course Type:&nbsp;                         </span> Compulsory    <br>
-                    <span class="title">Credit:&nbsp;                              </span> 3             <br>
+                    <span class="title">Course Title :&nbsp;                        </span><a href="https://cmap.cycu.edu.tw:8443/Syllabus/CoursePreview.html?yearTerm=1111&opCode=EL052C" class="course-title" target="_blank">普通物理(一)</a>       <br>
+                    <span class="title">Course Code :&nbsp;                         </span> EL052C        <br>
+                    <span class="title">Course Type :&nbsp;                         </span> Compulsory    <br>
+                    <span class="title">Credit :&nbsp;                              </span> 3             <br>
                     <span class="title">Instructor:&nbsp;                          </span> 周志隆         <br><br>
-                    <span class="title">Teaching Method and Reflection            </span>                <br>
-                    <p>In this course, there are eight quiz and two exam. <mark class='highlight-red'>All of quiz are on i-learning</mark>, each of them has there own deadline, so please re   member to take quiz. By the way, teacher is pretty liberal about attendance, he doesn't care about if you attend or not. So Every students will get the 10 percent of total score about attendance. This Instructor is pretty smart and passional about physics, therefore, don't be shy to ask teacher questions. In my opinion, <mark class='highlight-red'>the course is discriminating, thus is not easy to get A.</mark></p>
-                    <span class="title">How do I study                            </span>                <br>
+                    <p class="title">Teaching Method and Reflection :            </p>                
+                    <p>In this course, there are eight quiz and two exam. <mark class='highlight-red'>All of quiz are on i-learning</mark>, each of them has there own deadline, so please re   member to take quiz. By the way, teacher is pretty liberal about attendance, he doesn't care about if you attend or not. So Every students will get the 10 percent of total score about attendance. This Instructor is pretty smart and passional about physics, therefore, don't be shy to ask teacher questions. In my opinion, <mark class='highlight-red'>the course is discriminating, thus is not easy to get A.</mark></p><br>
+                    <p class="title">How do I study :                            </p>                
                     <p>In this semester, I didn't find the best way to study. Therefore, the following methods are second semester I used. It's very simple, all you have to do are <mark class="highlight-red">watching youtube videos and take notes</mark> before instructor teach. Youtube videos as below.<br>
-                    <a href="https://youtube.com/playlist?list=PLuz2BOX_eyHH8S9V81ASN92VTR0GaRA47" target="_blank">《國立中山大學開放式課程》普通物理(周啟教授)</a></p>
-                    <span class="title">Score:&nbsp;                               </span> 70             <br>
-                    <span class="title">Rank:&nbsp;                                </span> 12/58           <br>
+                    <a href="https://youtube.com/playlist?list=PLuz2BOX_eyHH8S9V81ASN92VTR0GaRA47" target="_blank">《國立中山大學開放式課程》普通物理(周啟教授)</a></p><br>
+                    <span class="title">Score :&nbsp;                               </span> 70             <br>
+                    <span class="title">Rank :&nbsp;                                </span> 12/58           <br><br>
 
                     <hr>
 
-                    <span class="title">Course Title:&nbsp;                        </span><a href="https://cmap.cycu.edu.tw:8443/Syllabus/CoursePreview.html?yearTerm=1101&opCode=EL055C&locale=zh_TW" class="course-title" target="_blank">微積分(上)</a>       <br>
-                    <span class="title">Course Code:&nbsp;                         </span> EL055C        <br>
-                    <span class="title">Course Type:&nbsp;                         </span> Compulsory    <br>
-                    <span class="title">Credit:&nbsp;                              </span> 3             <br>
-                    <span class="title">Instructor:&nbsp;                          </span> 許大偉        <br><br>
-                    <span class="title">Teaching Method and Reflection            </span>               <br>
-                    <p>This course has four exams and most of department have same examination paper. Teacher tend to write on the blackboard and students take notes. The instructor is very passionate about mathematics as well as happy to answer students' questions. <mark class="highlight-red">He is a great instructor and the class is also easy A's.</mark></p>
-                    <span class="title">How do I study                            </span>                <br>
+                    <span class="title">Course Title :&nbsp;                        </span><a href="https://cmap.cycu.edu.tw:8443/Syllabus/CoursePreview.html?yearTerm=1101&opCode=EL055C&locale=zh_TW" class="course-title" target="_blank">微積分(上)</a>       <br>
+                    <span class="title">Course Code :&nbsp;                         </span> EL055C        <br>
+                    <span class="title">Course Type :&nbsp;                         </span> Compulsory    <br>
+                    <span class="title">Credit :&nbsp;                              </span> 3             <br>
+                    <span class="title">Instructor :&nbsp;                          </span> 許大偉        <br><br>
+                    <p class="title">Teaching Method and Reflection :            </p>          
+                    <p>This course has four exams and most of department have same examination paper. Teacher tend to write on the blackboard and students take notes. The instructor is very passionate about mathematics as well as happy to answer students' questions. <mark class="highlight-red">He is a great instructor and the class is also easy A's.</mark></p><br>
+                    <p class="title">How do I study :                            </p>               
                     <p>The types of <mark class="highlight-red">exam questions are similar to textbook questions</mark> which are circled by teacher. So all you have to do is to practice more those questions. By the way, the full score of each exam is 105. There are some previous exams, the link as below.<br>
-                    <a href="https://mathwww.cycu.edu.tw/%e6%ad%b7%e5%b1%86%e8%a9%a6%e9%a1%8c109/" target="_blank">《微積分會考》歷屆試題</a></p>
-                    <span class="title">Score:&nbsp;                               </span> 93             <br>
-                    <span class="title">Rank:&nbsp;                                </span> 5/58           <br>
+                    <a href="https://mathwww.cycu.edu.tw/%e6%ad%b7%e5%b1%86%e8%a9%a6%e9%a1%8c109/" target="_blank">《微積分會考》歷屆試題</a></p><br>
+                    <span class="title">Score :&nbsp;                               </span> 93             <br>
+                    <span class="title">Rank :&nbsp;                                </span> 5/58           <br><br>
 
                     <hr>
                     
-                    <span class="title">Course Title:&nbsp;                        </span><a href="https://cmap.cycu.edu.tw:8443/Syllabus/CoursePreview.html?yearTerm=1101&opCode=EL056C&locale=zh_TW" class="course-title" target="_blank">普通物理實驗(一)</a>       <br>
-                    <span class="title">Course Code:&nbsp;                         </span> EL056C        <br>
-                    <span class="title">Course Type:&nbsp;                         </span> Compulsory    <br>
-                    <span class="title">Credit:&nbsp;                              </span> 1             <br>
-                    <span class="title">Instructor:&nbsp;                          </span> 陳至信        <br><br>
-                    <span class="title">Teaching Method and Reflection            </span>               <br>
-                    <p></p>
-                    <span class="title">How do I study                            </span>                <br>
-                    <p></p>
-                    <span class="title">Score:&nbsp;                               </span> 78             <br>
-                    <span class="title">Rank:&nbsp;                                </span> 34/61           <br>
+                    <span class="title">Course Title :&nbsp;                        </span><a href="https://cmap.cycu.edu.tw:8443/Syllabus/CoursePreview.html?yearTerm=1101&opCode=EL056C&locale=zh_TW" class="course-title" target="_blank">普通物理實驗(一)</a>       <br>
+                    <span class="title">Course Code :&nbsp;                         </span> EL056C        <br>
+                    <span class="title">Course Type :&nbsp;                         </span> Compulsory    <br>
+                    <span class="title">Credit :&nbsp;                              </span> 1             <br>
+                    <span class="title">Instructor :&nbsp;                          </span> 陳至信        <br><br>
+                    <p class="title">Teaching Method and Reflection :            </p>              
+                    <p></p><br>
+                    <p class="title">How do I study :                            </p>            
+                    <p></p><br>
+                    <span class="title">Score :&nbsp;                               </span> 78             <br>
+                    <span class="title">Rank :&nbsp;                                </span> 34/61           <br><br>
 
                     <hr>
 
