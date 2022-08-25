@@ -7,15 +7,43 @@
         <title>Personal Profile</title>
         <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
         <link rel="stylesheet" href="../style.css">
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     </head>
     
-    <body>
-        <div class="menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="Course-Record.html" title="Course record" target="_self">Course record</a></li>
-            </ul>
-        </div>
+    <body style="background-color: #015761">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-expand-sm">
+                <div class="nav-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html" title="Home">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" title="About Me">Me</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Course-Record.html" title="Course Record">Course</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://www.instagram.com/conan_bbx/" title="Instagram" target="_blank"><img src="../img/instagram.png"></a>    
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://www.facebook.com/conan.huang.96/" title="Facebook" target="_blank"><img src="../img/facebook.png"></a>    
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://github.com/conan0220" title="GitHub" target="_blank"><img src="../img/github.png"></a>    
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" title="Gmail"><img src="../img/gmail.png" onclick="copyToClipBoard('conanhuang8382@gmail.com')"></a>    
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header> 
 
         <div class="content">
             <h1>Course record</h1>
@@ -106,5 +134,8 @@
             <div id="second semester of freshman"></div>
 
         </div>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
 </html>

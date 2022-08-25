@@ -24,56 +24,12 @@ a {
     color: rgb(255, 5, 209);
 }
 
-.menu {
-    background-color: #333333;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.8;
-    z-index: 1;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0;
-    overflow: hidden;
-    background-color:#333333;
-    width: 100%;
-}
-
-.menu ul li {
-    float: left;
-    display: inline;
-}
-
-.menu ul li a {
-    color: white;
-    text-align: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 8px;
-    padding-right: 8px;
-    line-height: 70px;
-    text-decoration: none;
-}
-
-.menu ul li a:hover {
-    color: #f7dc4f;
-}
-
-.menu ul li:hover {
-    background-color:black;
-}
-
 div.content {
     position: absolute;
-    width: 50%;
-    left: 25%;
+    font-size: 28px;
+    width: 100%;
     word-wrap: break-word;
     color: white;
-    background-color: alpha(0);
 }
 
 .course-title {
