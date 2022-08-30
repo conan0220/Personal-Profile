@@ -21,6 +21,10 @@
     color: #f7dc4f;
 }
 
+.course-record hr {
+    border: 3px solid;
+}
+
 .course-record a {
     color:rgba(255, 255, 255, .5);
 }
