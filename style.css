@@ -1,15 +1,17 @@
 .course-record {
     position: absolute;
-    font-size: 28px;
+    font-size: 14px;
+    /* width: 75%; */
     width: 75%;
     left: 12.5%;
+    
     word-wrap: break-word;
     color: white;
     background-color: #015761;
 }
 
 .course-record h1 {
-    font-size: 100px;
+    font-size: 50px;
     /* text-align: center; */
     color: #f7dc4f;
     color:rgba(255, 255, 255, .7);
@@ -17,18 +19,18 @@
 }
 
 .course-record h2 {
-    font-size: 70px;
+    font-size: 30px;
     /* color: #f7dc4f; */
     color: white;
 }
 
 .course-record h3 {
-    font-size: 40px;
+    font-size: 20px;
     color: rgb(255, 60, 0);
 }
 
 .course-record hr {
-    border-top: 10px dashed;
+    border-top: 5px dashed;
 }
 
 .course-record a {
@@ -43,12 +45,17 @@
     color:rgba(255, 255, 255, .5);
 }
 
+.course-record .list {
+    font-size: 20px;
+}
+
 .text-decoration-none {
     text-decoration: none;
 }
 
-.title {
+.course-record .title {
     font-weight: bold;
+    font-size: 16px;
     color: #f7dc4f;
 }
 
@@ -106,10 +113,41 @@ mark.highlight-red {
 
 @media only screen and (max-width: 980px) {
 
-    div.course-record {
-        font-size: 50px;
+    .course-record {
+        font-size: 40px;
+        width: 94%;
+        left: 3%;
     }
 
+    .course-record h1 {
+        font-size: 100px;
+        color: #f7dc4f;
+        color:rgba(255, 255, 255, .7);
+    
+    }
+
+    .course-record .list {
+        font-size: 60px;
+    }
+
+    .course-record h2 {
+        font-size: 80px;
+        color: white;
+    }
+    
+    .course-record h3 {
+        font-size: 50px;
+        color: rgb(255, 60, 0);
+    }
+    
+    .course-record hr {
+        border-top: 10px dashed;
+    }
+
+    .course-record .title {
+        font-size: 50px;
+    }
+    
     .introduction {
         background-color: #015761;
         text-align:center;
