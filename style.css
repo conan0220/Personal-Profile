@@ -10,19 +10,25 @@
 
 .course-record h1 {
     font-size: 100px;
-    text-align: center;
+    /* text-align: center; */
     color: #f7dc4f;
     color:rgba(255, 255, 255, .7);
 
 }
 
 .course-record h2 {
-    font-size: 80px;
-    color: #f7dc4f;
+    font-size: 70px;
+    /* color: #f7dc4f; */
+    color: white;
+}
+
+.course-record h3 {
+    font-size: 40px;
+    color: rgb(255, 60, 0);
 }
 
 .course-record hr {
-    border: 3px solid;
+    border-top: 10px dashed;
 }
 
 .course-record a {
