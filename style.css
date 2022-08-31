@@ -2,16 +2,17 @@
     position: absolute;
     font-size: 14px;
     /* width: 75%; */
-    width: 75%;
-    left: 12.5%;
-    
+    max-width: 50%;
+    left: 25%;
+    right: 25%;
+
     word-wrap: break-word;
     color: white;
     background-color: #015761;
 }
 
 .course-record h1 {
-    font-size: 50px;
+    font-size: 4em;
     /* text-align: center; */
     color: #f7dc4f;
     color:rgba(255, 255, 255, .7);
@@ -19,18 +20,18 @@
 }
 
 .course-record h2 {
-    font-size: 30px;
+    font-size: 2em;
     /* color: #f7dc4f; */
     color: white;
 }
 
 .course-record h3 {
-    font-size: 20px;
+    font-size: 1.3em;
     color: rgb(255, 60, 0);
 }
 
 .course-record hr {
-    border-top: 5px dashed;
+    border-top: 0.3em dashed;
 }
 
 .course-record a {
@@ -46,7 +47,7 @@
 }
 
 .course-record .list {
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 .text-decoration-none {
@@ -55,7 +56,7 @@
 
 .course-record .title {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.1em;
     color: #f7dc4f;
 }
 
@@ -86,12 +87,12 @@ mark.highlight-red {
 }
 
 .navbar-nav {
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .navbar-nav img {
-    width: 25px;
-    height: 25px;
+    width: 1em;
+    height: 1em;
     opacity: .5;
 }
 
@@ -112,6 +113,25 @@ mark.highlight-red {
 }
 
 @media only screen and (max-width: 980px) {
+    .course-record {
+        font-size: 25px;
+        max-width: 100%;
+        left: 1%;
+        right: 1%;
+    }
+
+    .navbar-nav {
+        font-size: 4em;
+    }
+    
+    .navbar-nav img {
+        width: .8em;
+        height: .8em;
+        opacity: .5;
+    }
+}
+
+/* @media only screen and (max-width: 980px) {
 
     .course-record {
         font-size: 40px;
@@ -182,4 +202,4 @@ mark.highlight-red {
 
 @media only screen and (min-width: 769px) {
 
-}
+} */
