@@ -12,7 +12,7 @@
 }
 
 .course-record h1 {
-    font-size: 4em;
+    font-size: 3em;
     /* text-align: center; */
     color: #f7dc4f;
     color:rgba(255, 255, 255, .7);
@@ -114,7 +114,7 @@ mark.highlight-red {
 
 @media only screen and (max-width: 980px) {
     .course-record {
-        font-size: 25px;
+        font-size: 30px;
         max-width: 100%;
         left: 1%;
         right: 1%;
