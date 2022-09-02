@@ -1,3 +1,7 @@
+p {
+    line-height: 1.8em;
+}
+
 /* 選單 */
 .navbar-nav {
     font-size: 1.5em;
@@ -148,9 +152,12 @@ code .number {
     color: #843F84;
 }
 
-code .struct,
-code .class {
+code .struct,.class {
     color: #FFD306;
+}
+
+code .namespace {
+    color: #7E9471;
 }
 
 code .comment {
