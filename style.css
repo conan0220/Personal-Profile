@@ -94,14 +94,6 @@
 /*  end    */
 
 /* .course-record */
-.course-record .main-h1 {
-    color:rgba(255, 255, 255, 1);
-}
-
-.course-record .main-h2 {
-    color: white;
-}
-
 .course-record .main-ul {
     font-size: 1.4em;
 }
@@ -130,4 +122,37 @@
     color: white;
 	background:linear-gradient(transparent 20%,rgba(255,255,255,0) 40%, #ff0000 50%,transparent 100%);	
     padding: 2px 1px;
+}
+
+pre code {
+    background-color: #232323;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+code .keyword {
+    color: #FF5555;
+}
+
+code .variable {
+    color: #B1C482;
+}
+
+code .string {
+    color: #D69D85;
+}
+
+code .number {
+    color: #843F84;
+}
+
+code .struct,
+code .class {
+    color: #FFD306;
+}
+
+code .comment {
+    color: #008000;
 }
