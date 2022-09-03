@@ -8,3 +8,4 @@ function copyToClipBoard(text) {
         console.log('Something went wrong', err);
     })
 }
+
