@@ -60,14 +60,17 @@ p {
 }
 
 .main-a {
+    text-decoration-line: none;
     color:rgba(255, 255, 255, .5);
 }
 
 .main-a:hover {
+    text-decoration-line: underline;
     color: white;
 }
 
 .main-a:visited {
+    text-decoration-line: none;
     color:rgba(255, 255, 255, .5);
 }
 
