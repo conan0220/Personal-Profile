@@ -1,5 +1,5 @@
 p {
-    line-height: 1.8em;
+    line-height: 1.7em;
 }
 
 /* 選單 */
@@ -130,11 +130,11 @@ p {
 
 pre code {
     background-color: #232323;
-    border: 1px solid #999;
+    border: 0px solid #232323;
     display: block;
-    padding: 20px;
-    border-radius: 6px;
-  }
+    padding: .5em;
+    border-radius: 1em;
+}
 
 code .keyword {
     color: #FF5555;
