@@ -62,7 +62,7 @@
         <div class="notes-c++">
             <div class="main">
                 <br><div class="main-h1 title">C++ Notes <span style="color:white; font-size:0.2em">2022 / 09 / 03</span></div></br>
-                <p>歡迎來到 C++ 的世界，這裡是我的學習筆記。每一篇文章都會搭配 Youtube 影片，加以陳述我的想法。</p>
+                <p>歡迎來到 C++ 的世界，這裡是我的學習筆記。</p>
                 <hr class="main-hr">
                 <br>
                 <h2 class="title">[Day1] Welcome to C++</h2>
@@ -80,8 +80,7 @@
                 <h4 class="title">C++ 特性</h4>
                 <p>
                     C++ 屬於<mark class="highlight-red">靜態型別、強型別</mark>程式語言。當我們宣告一個變數並賦予其型別時，可以看出靜態型別的特性，反之 Python 這種動態型別程式語言就不需要明確地宣告型別，中途也可以隨意改動。強型別其實是一種觀念，是指<mark class="highlight-red">盡量使用具有型別的方式開發</mark>。以上兩個特性主要在提升發現錯誤的機會。當型別錯誤時，編譯器 (Compiler) 不會讓程式通過編譯。雖然有點囉嗦，但是卻可以避免掉一些難以發現的 bug，尤其在大程式裡更能凸顯它的優點。相對於 Python，C 跟 C++ 都是屬於較低階的語言，<mark class="highlight-red">它們可以直接對記憶體進行存取</mark>，所以效率很高，適合寫靠近硬體的軟體。C++ 從 C 衍生出來，所以 C++ 有一個特性是 C 沒有的，那就是<mark class="highlight-red"> OOP (Object Oriented Programming) </mark>。簡單來說，差異在於 C++ 的 class 比 struct 多出了一些功能，這部分之後會談到。
-                    <pre><code>
-/* C++ 靜態型別 */
+                    <pre><code>/* C++ 靜態型別 */
 int i = 10;
 
 /* Python 動態型別 */
@@ -89,14 +88,13 @@ i = 10;
 i = "10";
 
 /* C++ 強型別 */
-int i = 1 + "abc";      // 編譯失敗
-                    </code></pre>
-                    
+int i = 1 + "abc";  // 編譯失敗</code></pre>  
                 </p>
 
-                <hr class="main-hr">
-
                 <br>
+                <hr class="main-hr">
+                <br>
+
                 <h2 class="title">[Day2] How to Setup C++ on Windows</h2>
                 <br>
                 <h4 class="title">影片</h4>
@@ -150,10 +148,62 @@ int i = 1 + "abc";      // 編譯失敗
 
                 </p>
                 <p>
-                    載完後會看到以下介面，勾選 使用 C++ 的桌面開發(Desktop Development with C++)。如果想要使用英文版或是其他語言的介面，點選語言套件(Language packs)並勾選。確認沒問題後就可以按右下角下載了。
+                    載完後會看到以下介面，勾選 使用 C++ 的桌面開發 (Desktop Development with C++)。如果想要使用英文版或是其他語言的介面，點選語言套件 (Language packs) 並勾選，推薦使用英文介面，因為中文版有些翻譯沒有很好。確認沒問題後就可以按右下角下載，下載需要一些時間可以去上個廁所。
+                </p>
+                <p>
                     <img src="../img/installing.png" style="width:100%; height:100%; object-fit:cover;">
                 </p>
-                <h4 class="title"></h4>
+                <br>
+                <p>
+                    進入 Visual Studio 按照以下步驟創建 New project。語言的部分可以在搜尋欄 (Search) 打上語言，應該就能找到在哪裡改了。
+                </p>
+                <p>
+                    <img src="../img/newProject.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                <br>
+                <p>
+                    選取 Project template，在這裡我們選擇 Empty Project。
+                </p>
+                <p>
+                    <img src="../img/selectProjectType.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                <br>
+                <p>
+                    Visual Studio 有 Solution 跟 Project。Solution 裡面有一或多個 Project，有點像工作台。Project 則存放你的 source code、library、image 等等。
+                </p>
+                <p>
+                    <img src="../img/createProject.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                <br>
+                <p>新增一個 .cpp file</p>
+                <p>
+                    <img src="../img/addNewFile.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                <p>
+                    <img src="../img/selectCppFile.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                <br>
+                <p>
+                    打上以下程式範例，並按 Local Windows Debugger 來 debugging。
+                </p>
+                <pre><code>#include &lt;iostream&gt;
+
+int main()
+{
+    std::cout << "Hello World!" << std::endl;
+}</code></pre>
+                <br>
+                <p>
+                    編譯成功畫面
+                </p>
+                <p>
+                    <img src="../img/buildProject.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                
+                <br>
+                <hr class="main-hr">
+                <br>
+
             </div>
         </div>
 
