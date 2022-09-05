@@ -1,5 +1,8 @@
-p {
-    line-height: 1.7em;
+/* index.html */
+.home {
+    background-color: #015761;
+    text-align:center;
+    font-size: 5rem;
 }
 
 /* 選單 */
@@ -29,11 +32,9 @@ p {
     color:rgba(255, 255, 255, 1.0);
 }
 
-/* end */
 
-.main {
+main {
     position: relative;
-    font-size: 18px;
     max-width: 768px;
     margin: 0 auto;
     padding: 0 10px;
@@ -41,75 +42,82 @@ p {
     word-wrap: break-word;
     color: white;
     background-color: #015761;
-} 
-
-.main-h1 {
-    font-size: 3em;
 }
 
-.main-h2 {
-    font-size: 2em;
+main h1 {
+    font-size: 3rem;
+    margin: 0 0 1rem;
 }
 
-.main-h3 {
-    font-size: 1.2em;
+main h2 {
+    font-size: 2rem;
+    margin: 0 0 1rem;
 }
 
-.main-hr {
-    border-top: 0.3em dashed;
+main h3 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
 }
 
-.main-a {
+main h4 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem;
+}
+
+main h5 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+main img {
+    margin: 0 0 1rem;
+}
+
+
+main a {
     text-decoration-line: none;
     color:rgba(255, 255, 255, .5);
 }
 
-.main-a:hover {
+main a:hover {
     text-decoration-line: underline;
     color: white;
 }
 
-.main-a:visited {
+main a:visited {
     text-decoration-line: none;
     color:rgba(255, 255, 255, .5);
 }
 
-.main-ul {
-    line-height: 2em;
+main ul {
+    line-height: 1.2rem;
 }
 
-.text-decoration-none {
-    text-decoration: none;
+main pre code {
+    background-color: #232323;
+    border: 0px solid #232323;
+    display: block;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
-.font-weight-bold {
-    font-weight: bold;
-}
-
-.title {
+main .title {
     font-weight: bold;
     color: #f7dc4f;
 }
 
-/* Home */
-.introduction {
-    background-color: #015761;
-    text-align:center;
-    font-size: 5em;
+main .text-decoration-none {
+    text-decoration: none;
 }
 
-/*  end    */
-
-/* .course-record */
-.course-record .main-ul {
-    font-size: 1.4em;
+main .font-weight-bold {
+    font-weight: bold;
 }
-
-/*  end  */
-
-/* .about-me */
-
-/* end */
 
 .text-light-red {
     color: rgb(255, 60, 0);
@@ -117,6 +125,10 @@ p {
 
 .text-dark-yellow {
     color: #f7dc4f;
+}
+
+.text-white {
+    color: white;
 }
 
 .highlight-yellow {
@@ -129,40 +141,4 @@ p {
     color: white;
 	background:linear-gradient(transparent 20%,rgba(255,255,255,0) 40%, #ff0000 50%,transparent 100%);	
     padding: 2px 1px;
-}
-
-pre code {
-    background-color: #232323;
-    border: 0px solid #232323;
-    display: block;
-    padding: 1em;
-    border-radius: 1em;
-}
-
-code .keyword {
-    color: #FF5555;
-}
-
-code .variable {
-    color: #B1C482;
-}
-
-code .string {
-    color: #D69D85;
-}
-
-code .number {
-    color: #843F84;
-}
-
-code .struct,.class {
-    color: #FFD306;
-}
-
-code .namespace {
-    color: #7E9471;
-}
-
-code .comment {
-    color: #008000;
 }
