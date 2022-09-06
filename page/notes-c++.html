@@ -190,9 +190,49 @@ int main()
                     <img src="../img/buildProject.png" style="width:100%; height:100%; object-fit:cover;">
                 </p>
             </section>
-                <hr>
+            <hr>
+            <section>
+                <h2 class="title">[Day3] How to run C++ in Command Line on Windows</h2>
+                <h3 class="title">何謂 Command Line ?</h3>
+                <p>Command Line 是一個能夠輸入指令跟系統直接對話的地方。Windows 的 Command Line 是 Command Prompt (CMD)，在搜尋框輸入 cmd 即可開啟。</p>
+                <h3 class="title">何謂 GCC ?</h3>
+                <p>
+                    GCC 是一個編譯器，負責把高階語言轉成組合語言或機器碼讓電腦讀懂，有點像翻譯員。更詳細的內容下一章會作解釋，現在只要知道他們能夠把程式語言轉成電腦讀得懂的語言。
+                </p>
+                <p>
+                    若要使用 GCC 編譯器，就必須執行 gcc 或 g++ 指令。以前的 GCC 只能編譯 C 語言，現在多了非常多語言，例如 Go、Objective-C、Objective-C++、Fortran、Ada、D 等等。那為什麼 gcc 也能夠編譯 C++ 還要 g++ 指令呢 ? 
+                </p>
+                <h3 class="title">等等會用到的指令</h3>
+                <p>
+                    開啟檔案目錄
+                    <code>cd 檔案路徑</code>
+                </p>
+                <p>
+                    顯示目前路徑下的檔案
+                    <code>dir</code>
+                </p>
+                <p>
+                    目前路徑下新增檔案目錄
+                    <code>mkdir 檔案目錄名稱</code>
+                </p>
+                <p>
+                    目前路徑下新增檔案
+                    <code>type nul > 檔名.副檔名</code>
+                </p>
+                <h4 class="title">g++ 指令</h4>
+                <p>
+                    產生 *.exe (可執行檔)
+                    <code>g++ 檔名.cpp -o 檔名</code>
+                </p>
+                <p>
+                    產生 *.s (Assembly) 
+                    <code>g++ -S 檔名.副檔名</code>
+                </p>
+                <h3 class="title"></h3>
+            </section>
+
             
-            </main>
+        </main>
 
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
