@@ -150,7 +150,7 @@ int i = 1 + "abc";  // 編譯失敗</code></pre>
                     我們選用 Visual Studio 這款 IDE，因為之後希望寫一個小遊戲來熟悉語法。進入官網，下載 Visual Studio Community。
                 </p>
                 <p>
-                    <a class="main-a" title="Visual Studio" target="_blank" href="https://visualstudio.microsoft.com/zh-hant/">點我下載</a>
+                    <a title="Visual Studio" target="_blank" href="https://visualstudio.microsoft.com/zh-hant/">點我下載</a>
 
                 </p>
                 <p>
@@ -200,7 +200,10 @@ int main()
                     GCC 是一個編譯器，負責把高階語言轉成組合語言或機器碼讓電腦讀懂，有點像翻譯員。更詳細的內容下一章會作解釋，現在只要知道他們能夠把程式語言轉成電腦讀得懂的語言。
                 </p>
                 <p>
-                    若要使用 GCC 編譯器，就必須執行 gcc 或 g++ 指令。以前的 GCC 只能編譯 C 語言，現在多了非常多語言，例如 Go、C++、Objective-C、Objective-C++、Fortran、Ada、D 等等。那為什麼 gcc 也能夠編譯 C++ 還要 g++ 指令呢 ? 
+                    若要使用 GCC 編譯器，就必須執行 gcc 或 g++ 指令。以前的 GCC 只能編譯 C 語言，現在多了非常多語言，例如 Go、C++、Objective-C、Objective-C++、Fortran、Ada、D 等等。
+                </p>
+                <p>
+                    那為什麼 gcc 也能夠編譯 C++ 還要 g++ 指令呢 ? 事實上，使用 g++ 時，程式會自動呼叫 gcc 來進行編譯，g++ 主要負責鏈結 C++ 的庫，gcc 不會自動鏈結，需要下達額外指令。
                 </p>
                 <h3 class="title">等等會用到的指令</h3>
                 <p>
@@ -213,7 +216,7 @@ int main()
                 </p>
                 <p>
                     目前路徑下新增檔案目錄
-                    <code>mkdir 檔案目錄名稱</code>
+                    <code>mkdir 檔案目錄名</code>
                 </p>
                 <p>
                     目前路徑下新增檔案
@@ -228,7 +231,77 @@ int main()
                     產生 *.s (Assembly) 
                     <code>g++ -S 檔名.副檔名</code>
                 </p>
-                <h3 class="title"></h3>
+                <h4 class="title">gcc 指令</h4>
+                <p>
+                    產生 *.exe (可執行檔)
+                    <code>gcc 檔名.副檔名 -o 檔名 -lstdc++<br>// 鏈結 C++ 標準庫 STL</code>
+                </p>
+                <h3 class="title">步驟</h3>
+                <p>
+                    <a title="MinGW" target="_blank" href="https://zh.wikipedia.org/zh-tw/MinGW">MinGW</a> 包含 gcc/g++ 和一系列工具，是 windows 下的 <a title="GNU" target="_blank" href="https://zh.m.wikipedia.org/zh-tw/GNU">GNU</a> 環境。
+                </p>
+                <p>
+                    <a title="GCC" target="_blank" href="https://winlibs.com/#download-release">點我下載</a>
+                </p>
+                <p>
+                    按照自己的需求下載 x64 或 x86
+                </p>
+                <p>
+                    <img src="../img/mingwDownload.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                <p>
+                    在 C 槽創建一個資料夾叫 mingw64 或 mingw32，接著解壓縮剛剛的 zip 到此資料夾。
+                </p>
+                <p>
+                    再來要設置環境變量，它是計算機自動創建和維護的變量，幫助系統定位和安裝應用程序、檢查系統首選項和執行命令，可以從設備上的任何位置訪問它。
+                </p>
+                <p>
+                    有兩種類型的變量：系統變量和用戶變量。 前者是系統上每個用戶都可以訪問的全局變量。 相反，用戶變量只能由當前登錄到計算機的人訪問。 這可以防止系統自動為每個人創建和維護相同的環境變量。
+                </p>
+                <p>
+                    在搜尋框打上 Edit the system environment variables。看到以下畫面後，點擊右下的 Environment Variables
+                </p>
+                <p>
+                    <img src="../img/systemProperties.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                <p>
+                   點擊系統變量或用戶變量的 Path 然後 Edit，新增 binary 的路徑。 
+                </p>
+                <p>
+                    <img src="../img/environmentVariables.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                <p>
+                    <img src="../img/mingw64BinaryPath.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                <p>
+                    在搜尋框打上 cmd 開啟 Command Prompt。輸入指令開啟檔案目錄，創建一個 .cpp file
+                </p>
+                <p>
+                    <img src="../img/createHello.cpp.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                <p>
+                    用文字編輯器開啟 .cpp file，在這裡我用記事本，接著打上以下程式碼。
+                </p>
+<pre><code>#include &lt;iostream&gt;
+
+int main() {
+    std::cout << "Hello World!";
+}</code></pre>
+                <p>
+                    <img src="../img/notepadHelloWorld.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                <p>
+                    打上指令產生執行檔，右邊為成功畫面，cpp file 跟 exe file。
+                </p>
+                <p>
+                    <img src="../img/create_exe.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
+                <p>
+                    輸入檔名即開啟檔案，下面為成功畫面。
+                </p>
+                <p>
+                    <img src="../img/compileHello.png" style="width:100%; height:100%; object-fit:cover;">
+                </p>
             </section>
 
             
