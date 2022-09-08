@@ -105,11 +105,12 @@ main pre {
 }
 
 main code {
-    background-color: #232323;
+    background-color: #282c34;
+    color:#abb2bf;
     border: 0px solid #232323;
     display: block;
     padding: .5rem;
-    border-radius: .5rem;
+    border-radius: .2rem;
 }
 
 main .title {
