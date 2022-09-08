@@ -79,14 +79,9 @@ main img {
 }
 
 
-main a {
+main a:link{
     text-decoration-line: none;
     color:rgba(255, 255, 255, .5);
-}
-
-main a:hover {
-    text-decoration-line: underline;
-    color: white;
 }
 
 main a:visited {
@@ -94,8 +89,13 @@ main a:visited {
     color:rgba(255, 255, 255, .5);
 }
 
+main a:hover {
+    text-decoration-line: underline;
+    color: orange;
+}
+
 main ul {
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1.7rem;
     margin: 0 0 1rem;
 }
@@ -112,10 +112,6 @@ main code {
     padding: .3rem;
     border-radius: .3rem;
 }
-/* 
-main td code {
-    margin: 0px 2rem 0px 0rem;
-} */
 
 main .title {
     font-weight: bold;
