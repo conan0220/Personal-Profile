@@ -73,7 +73,7 @@
                     對我來說程式語言跟平常使用的<a class="main-a" target="_blank" href="https://zh.wikipedia.org/zh-tw/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80">自然語言</a>大同小異。
                 </p>    
                 <p>    
-                    人類學習自然語言的目地不外乎是與他人溝通，程式語言則是與電腦溝通。然而電腦只認得 0 跟 1，中間必須要經過一些轉換才能把我們的話翻譯給電腦，這部分之後會談到。
+                    人類學習自然語言的目地不外乎是與他人溝通，程式語言則是與電腦溝通。然而電腦只認得 0 跟 1，中間必須要經過一些轉換才能把我們的話翻譯給電腦。
                 </p>
                 <p>    
                     綜合上述，程式語言可以說是一種用來解決問題的工具。
@@ -87,7 +87,7 @@
                     以上兩個特性主要在提升發現錯誤的機會。當型別錯誤時，編譯器 (Compiler) 不會讓程式通過編譯。雖然有點囉嗦，但是卻可以避免掉一些難以發現的 bug，尤其在大程式裡更能凸顯它的優點。相對於 Python，C 跟 C++ 都是屬於較低階的語言，它們可以直接對記憶體進行存取，所以效率很高，適合寫靠近硬體的軟體。
                 </p>
                 <p>    
-                    C++ 從 C 衍生出來，所以 C++ 有一個特性是 C 沒有的，那就是 OOP (Object Oriented Programming)。簡單來說，差異在於 C++ 的 class 比 struct 多出了一些功能，這部分之後會談到。
+                    C++ 從 C 衍生出來，所以 C++ 有一個特性是 C 沒有的，那就是 OOP (Object Oriented Programming)。簡單來說，差異在於 C++ 的 class 比 struct 多出了一些功能。
                 </p>
                     <pre><code>/* C++ 靜態型別 */
 int i = 10;
@@ -192,12 +192,12 @@ int main()
             </section>
             <hr>
             <section>
-                <h2 class="title">[Day3] How to run C++ in Command Line on Windows</h2>
+                <h2 class="title">[Day3] How to compile C++ in Command Line on Windows</h2>
                 <h3 class="title">何謂 Command Line ?</h3>
                 <p>Command Line 是一個能夠輸入指令跟系統直接對話的地方。Windows 的 Command Line 是 Command Prompt (CMD)，在搜尋框輸入 cmd 即可開啟。</p>
                 <h3 class="title">何謂 GCC ?</h3>
                 <p>
-                    GCC 是一個編譯器，負責把高階語言轉成組合語言或機器碼讓電腦讀懂，有點像翻譯員。更詳細的內容下一章會作解釋，現在只要知道他們能夠把程式語言轉成電腦讀得懂的語言。
+                    GCC 是一個編譯器，負責把高階語言轉成組合語言或機器碼讓電腦讀懂，有點像翻譯員。
                 </p>
                 <p>
                     若要使用 GCC 編譯器，就必須執行 gcc 或 g++ 指令。以前的 GCC 只能編譯 C 語言，現在多了非常多語言，例如 Go、C++、Objective-C、Objective-C++、Fortran、Ada、D 等等。
@@ -205,7 +205,7 @@ int main()
                 <p>
                     那為什麼 gcc 能夠編譯 C++ 還需要 g++ 指令呢 ? 事實上，使用 g++ 時，程式會自動呼叫 gcc 來進行編譯，g++ 主要負責鏈結 C++ 的庫，gcc 不會自動鏈結，需要下達額外指令。
                 </p>
-                <h3 class="title">等等會用到的指令</h3>
+                <h3 class="title">cmd 指令</h3>
                 <p>
                     開啟檔案目錄
                     <code>cd 檔案路徑</code>
@@ -222,19 +222,19 @@ int main()
                     目前路徑下新增檔案
                     <code>type nul > 檔名.副檔名</code>
                 </p>
-                <h4 class="title">g++ 指令</h4>
+                <h3 class="title">g++ 指令</h3>
                 <p>
                     產生 *.exe (可執行檔)
-                    <code>g++ 檔名.cpp -o 檔名</code>
+                    <code>// 兩種方式<br>g++ -o 可執行檔名 檔名.cpp<br>g++ 檔名.cpp -o 可執行檔名</code>
                 </p>
                 <p>
                     產生 *.s (Assembly) 
                     <code>g++ -S 檔名.副檔名</code>
                 </p>
-                <h4 class="title">gcc 指令</h4>
+                <h3 class="title">gcc 指令</h3>
                 <p>
                     產生 *.exe (可執行檔)
-                    <code>gcc 檔名.副檔名 -o 檔名 -lstdc++<br>// 鏈結 C++ 標準庫 STL</code>
+                    <code>// 鏈結 C++ 標準庫 STL<br>gcc 檔名.副檔名 -o 執行檔名 -lstdc++</code>
                 </p>
                 <h3 class="title">步驟</h3>
                 <p>
@@ -304,7 +304,19 @@ int main() {
                 </p>
             </section>
 
-            
+            <hr>
+
+            <section>
+                <h2 class="title">[Day4] How to link C++ in Command Line on Windows</h2>
+
+            </section>
+
+            <hr>
+
+            <section>
+                <h2 class="title">[Day5] Static Link v.s Dynamic Link</h2>
+                
+            </section>
         </main>
 
         <!-- JavaScript Bundle with Popper -->
