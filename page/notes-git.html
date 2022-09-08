@@ -67,30 +67,99 @@
 
         <main>
             <h1 class="title">Git Notes <span style="color:white; font-size:.7rem">2022 / 09 / 08</span></h1>
-            <p>歡迎來到 <a title="git" target="_blank" href="https://git-scm.com/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">Git</a> 的世界，這裡是我的學習筆記。</p>
+            <p>歡迎來到 Git 的世界，這裡是我的學習筆記。</p>
+            <hr>
+            <h2 class="title">資料來源</h2>
+            <ul> 
+                <li>
+                    <a target="_blank" href="https://git-scm.com/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">Git Official Website</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://hackmd.io/@EdwardWu/GitTutorial#%E7%B7%A8%E8%BC%AF%E6%AA%94%E6%A1%88">03/09 嵌入式系統實驗 Git, GitHub, and GitPi (Part 1)</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://hackmd.io/@EdwardWu/GitBranch">03/16 嵌入式系統實驗 Git, GitHub, and GitPi (Part 2)</a>
+                </li>
+            </ul>
             <hr>
             <section>
                 <h2 class="title">指令</h2>
+                <h3 class="title">移除、改名</h3>
                 <p>
                     從 git 跟 資料夾 中 移除檔案
                     <code>git rm &lt;檔名.副檔名&gt;</code>
-                </p>
-                <p>
-                    更改檔案名稱
-                    <code>git mv &lt;檔名.副檔名&gt; &lt;更改後 檔名.副檔名&gt;</code>
                 </p>
                 <p>
                     從 git 中 移除檔案
                     <code>git rm &lt;檔名.副檔名&gt; --cached</code>
                 </p>
                 <p>
-                    檢視 commit 紀錄
+                    更改檔案名稱
+                    <code>git mv &lt;檔名.副檔名&gt; &lt;更改後 檔名.副檔名&gt;</code>
+                </p>
+                <h3 class="title">檢視提交紀錄</h3>
+                <p>
+                    檢視 commit history 
                     <code>git log</code>
                 </p>
                 <p>
-                    只顯示 commit 紀錄名稱
-                    <code>git log --oneline</code>
+                    <table style="border: .2rem solid rgba(255, 254, 254, 0.644);; border-collapse: separate; border-spacing: .9rem;">
+                        <caption style="caption-side: top; color: white;">git log 的常用選項</caption>
+                        <colgroup>
+                        <col style="width: 30%;">
+                        <col style="width: 70%;">
+                        </colgroup>
+                        <thead>
+                            <tr class="title">
+                                <th>選項</th>
+                                <th>說明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><p><code>-p</code></p></td>
+                                <td><p>顯示每筆提交的補綴。</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><code>--stat</code></p></td>
+                                <td><p>顯示每筆提交中更動檔案的統計及摘要資訊。</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><code>--shortstat</code></p></td>
+                                <td><p>只顯示 --stat 提供的的訊息中關於更動、插入、刪除的文字。</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><code>--name-only</code></p></td>
+                                <td><p>在提交訊息後方顯示更動的檔案列表。</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><code>--name-status</code></p></td>
+                                <td><p>在檔案列表顯示「新增」、「更動」、「刪除」等資訊。</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><code>--abbrev-commit</code></p></td>
+                                <td><p>只顯示 SHA-1 校驗碼的前幾位數，而不是顯示全部 40 位數。</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><code>--relative-date</code></p></td>
+                                <td><p>以相對時間格式顯示日期（例如：「2 weeks ago」），而不是使用完整的日期格式。</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><code>--graph</code></p></td>
+                                <td><p>在輸出的日誌旁邊顯示分支及合併歷史的 ASCII 圖形。</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><code>--pretty</code></p></td>
+                                <td><p>以其它格式顯示提交。選項包括 oneline、short、full、fuller 及可自訂格式的 format。</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><code>--oneline</code></p></td>
+                                <td><p>只顯示 commit 紀錄名稱</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </p>
+                <h3 class="title">遠端版本庫</h3>
                 <p>
                     新增遠端版本庫
                     <code>git remote add &lt;簡稱&gt; &lt;url&gt;</code>

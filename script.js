@@ -9,3 +9,10 @@ function copyToClipBoard(text) {
     })
 }
 
+function copyCode(id) {
+    const code = document.getElementById(id);
+    copyToClipBoard(code.innerText);
+    
+}
+
+
