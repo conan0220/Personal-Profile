@@ -129,6 +129,10 @@ main code {
     border-radius: .3rem;
 }
 
+main tbody td code {
+    margin-right: 1rem;
+}
+
 main .title {
     font-weight: bold;
     color: #f7dc4f;
