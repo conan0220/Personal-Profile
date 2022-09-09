@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Git Notes</title>
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+        <link rel="stylesheet" href="../style.css">
+        <script src="../script.js"></script>
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/atom-one-dark.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    
+    <body style="background-color: #015761;">
+        <header>
+            <nav class="navbar navbar-expand navbar-expand-lg navbar-expand-sm">
+                <div class="nav-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html" title="Home">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about-me.html" title="About Me">Me</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="course-record.html" title="Course Record">Course</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" title="Study Notes">Notes</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li>
+                                    <a class="dropdown-item" href="notes-c++.html" title="C++ Notes">C++</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="notes-git.html" title="Git Notes">Git</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="notes-ml.html" title="Machine Learning Notes">ML</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://www.instagram.com/conan_bbx/" title="Instagram" target="_blank"><img src="../img/instagram.png"></a>    
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://www.facebook.com/conan.huang.96/" title="Facebook" target="_blank"><img src="../img/facebook.png"></a>    
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://github.com/conan0220" title="GitHub" target="_blank"><img src="../img/github.png"></a>    
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="" title="Gmail"><img src="../img/gmail.png" onclick="copyToClipBoard('conanhuang8382@gmail.com')"></a>    
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header> 
+
+        <main>
+            <h1 class="title">ML Notes <span style="color:white; font-size:.7rem">2022 / 09 / 09</span></h1>
+            <hr>
+            <p>歡迎來到 ML 的世界，這裡是我的學習筆記。</p>
+            <section>
+                <h2 class="title">資料來源</h2>
+                <hr>
+                <ul>
+                    <big> 
+                        <li>
+                            <a target="_blank" href="https://youtube.com/playlist?list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49">Machine Learning (Hung-yi Lee, NTU)</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://zh.wikipedia.org/zh-tw/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0">機器學習 - 維基百科</a>
+                        </li>
+                    </big>
+                </ul>
+            </section>
+            <section>
+                <h2 class="title">前言</h2>
+                <hr>
+                <p>
+                    ML 的全名為 Machine Learning 機器學習。ML 為 AI 人工智慧的一個分支，也是實現 AI 的一個途徑。
+                </p>
+                <p>
+                    顧名思義，機器學習的目的就是使機器能夠像人類一樣自主學習，透過大量資料分析及過往經驗來找出最適合的演算法並解決問題。
+                </p>
+                <p>
+                    <h4 class="title">機器學習有下面幾種定義 :</h4>
+                    <ul>
+                        <li>機器學習是一門人工智慧的科學，該領域的主要研究物件是人工智慧，特別是如何在經驗學習中改善具體演算法的效能。</li>
+                        <li>機器學習是對能通過經驗自動改進的電腦演算法的研究。</li>
+                        <li>機器學習是用資料或以往的經驗，以此最佳化電腦程式的效能標準。</li>
+                    </ul>
+                </p>
+                <p>
+                    <h4 class="title">機器學習有下面幾種分類 :</h4>
+                    <ul>
+                        <li><a target="_blank" href="https://zh.wikipedia.org/zh-tw/%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0">監督學習</a>從給定的訓練資料集中學習出一個函數，當新的資料到來時，可以根據這個函數預測結果。監督學習的訓練集要求是包括輸入和輸出，也可以說是特徵和目標。訓練集中的目標是由人標註的。常見的監督學習演算法包括迴歸分析和統計分類。</li>
+                        <li><a target="_blank" href="https://zh.wikipedia.org/zh-tw/%E7%84%A1%E7%9B%A3%E7%9D%A3%E5%AD%B8%E7%BF%92">無監督學習</a>與監督學習相比，訓練集沒有人為標註的結果。常見的無監督學習演算法有生成對抗網路（GAN）、聚類。</li>
+                        <li><a target="_blank" href="https://zh.wikipedia.org/w/index.php?title=%E5%8D%8A%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0&action=edit&redlink=1&variant=zh-tw">半監督學習</a>半監督學習介於監督學習與無監督學習之間。</li>
+                        <li><a target="_blank" href="https://zh.wikipedia.org/zh-tw/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0">強化學習</a>增強學習機器為了達成目標，隨著環境的變動，而逐步調整其行為，並評估每一個行動之後所到的回饋是正向的或負向的。</li>
+                    </ul>
+                </p>
+            </section>
+        </main>
+    </body>
+</html>    
