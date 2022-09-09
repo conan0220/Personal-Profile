@@ -7,12 +7,16 @@
 
 /* 選單 */
 .navbar-nav {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+}
+
+.dropdown-item {
+    font-size: 1.3rem;
 }
 
 .navbar-nav img {
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.8rem;
+    height: 1.8rem;
     opacity: .5;
 }
 
@@ -46,7 +50,7 @@ main {
 
 main h1 {
     font-size: 3rem;
-    margin: 0 0 1rem;
+    margin: 1rem 0 1rem;
 }
 
 main h2 {
@@ -85,12 +89,12 @@ main img {
 
 main a:link{
     text-decoration-line: none;
-    color:rgba(255, 255, 255, .5);
+    color:orange;
 }
 
 main a:visited {
     text-decoration-line: none;
-    color:rgba(255, 255, 255, .5);
+    color:orange;
 }
 
 main a:hover {
