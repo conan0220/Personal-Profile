@@ -89,12 +89,12 @@ main img {
 
 main a:link{
     text-decoration-line: none;
-    color:orange;
+    color:rgba(255, 255, 255, .5);
 }
 
 main a:visited {
     text-decoration-line: none;
-    color:orange;
+    color:rgba(255, 255, 255, .5);
 }
 
 main a:hover {
