@@ -109,7 +109,7 @@
                 </p>
                 <h3 class="title">原理</h3>
                 <p>
-                    一開始，我們要創造一個函式集合，裡面有成千上萬的函式，在這裡每個函式又稱為模型。接著，我們會用大量的資料去訓練模型，模型也會透過將自己丟到 <a target="_blank" href="https://zh.wikipedia.org/zh-tw/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0">損失函式</a> (Loss function) 內，來判斷模型的好壞 並 調整自己的參數。隨著訓練次數的增加，模型會漸漸變成我們要的樣子。
+                    一開始，我們要創造一個函式集合，裡面有成千上萬的函式，在這裡每個函式又稱為模型。接著，我們會用大量的資料去訓練模型，模型也會透過將自己丟到 <a target="_blank" href="https://zh.wikipedia.org/zh-tw/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0">損失函式</a> ( Loss function ) 內，來判斷模型的好壞 並 調整自己的參數。隨著訓練次數的增加，模型會漸漸變成我們要的樣子。
                 </p>
                 <p>
                     <h5 class="title">訓練過程主要不斷重複以下三點 :</h4>
@@ -137,7 +137,7 @@
                 <hr>
                 <h3 class="title">概念</h3>
                 <p>
-                    <a target="_blank" href="https://zh.wikipedia.org/zh-tw/%E7%B7%9A%E6%80%A7%E5%9B%9E%E6%AD%B8">線性迴歸</a> 是一個分析數據資料的方法，應用相當廣泛。迴歸線也可以稱作迴歸模型，屬於監督學習的一種。簡單來說，就是一條靠近資料的線，此條線會隨著函式的樣子改變，不一定為直線。在機器學習中，我們則可以透過它來找到資料的規律，來預測未來遇到的資料。
+                    <a target="_blank" href="https://zh.wikipedia.org/zh-tw/%E7%B7%9A%E6%80%A7%E5%9B%9E%E6%AD%B8">線性迴歸</a> 是一個分析數據資料的方法，應用相當廣泛。迴歸線也可以稱作迴歸模型，屬於監督學習的一種。簡單來說，就是一條靠近資料的線，此條線會隨著函式的樣子改變，所以不一定為直線。在機器學習中，我們則可以透過它來找到資料的規律，來預測未來遇到的資料。
                 </p>
                 <p>
                     <img src="../img/demo-of-linear-regression.png" alt="Linear Regression">
@@ -146,7 +146,32 @@
             <section>
                 <h2 class="title">Bias & Variance</h2>
                 <hr>
-                <h3 class="title"></h3>
+                <h3 class="title">前言</h3>
+                <p>
+                    訓練完我們的模型後，進入評估模型的階段。評估一樣東西時，一定需要一個標準或準則來判定好壞，這裡我們的準則是模型的 誤差 ( Error )。影響 Error 的兩樣因素則是 偏差 (Bias) & 方差 ( Variance )。俗話說的好，有一好無兩好。降低 Bias 時，Variance 會上升、降低 Variance 時，Bias 會上升。所以模型必須選得剛剛好才行。
+                </p>
+                <h3 class="title">Bias</h3>
+                <p>
+                    Bias 的定義是 模型的輸出與標籤 ( label ) 的誤差，在這裡的標籤意旨 正確答案。
+                </p>
+                <p>
+                    Bias 越大 模型的輸出與標籤的差距越大、離正確答案越遠，代表模型不瞭解資料背後的規律 稱為 Underfitting。可能因為模型訓練的不夠徹底、模型複雜度太低 等等。解決辦法為 提高複雜度、篩選更好的數據特徵來訓練模型。
+                </p>
+                <h3 class="title">Variance</h3>
+                <p>
+                    Variance 的定義是 針對不同的輸入資料，模型輸出的變化 (變異性) 分佈。
+                </p>
+                <p>
+                    當我們為了解決 Underfitting 而把複雜度大幅度提高時，往往會造成在訓練時可以得到很好的預測結果，然而一加入沒看過的測試資料時，又會產生大量的 Error。這是因為 模型過度擬合數據，導致模型太過複雜，不能真實反映實際情況。這種模型我們稱為 Overfitting。通過簡化模型，比如減少模型參數 可以降低 Error 的發生。
+                </p>
+                <h3 class="title">模型複雜度 & 誤差</h3>
+                <p>
+                    <img src="../img/bias-variance-tradeoff.png" alt="圖表">
+                </p>
+                <h3 class="title">訓練資料上的 Bias & Variance</h3>
+                <p>
+                    <img src="../img/underfitting-good-fit-overfitting.jpg" alt="範例">
+                </p>
             </section>
             <section>
                 <h2 class="title">資料來源</h2>
@@ -164,6 +189,8 @@
                         </li>
                         <li>
                             <a target="_blank" href="https://chwang12341.medium.com/machine-learning-%E7%B5%A6%E8%87%AA%E5%B7%B1%E7%9A%84%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-linear-regression-%E8%BF%B4%E6%AD%B8%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%B4%B9%E8%88%87%E5%85%AC%E5%BC%8F%E5%8E%9F%E7%90%86%E6%95%99%E5%AD%B8-35e34ad8c690">Linear Regression — 迴歸模型介紹與公式原理教學</a>
+                        </li>
+                        <li><a target="_blank" href="https://ppfocus.com/0/dic96c45f.html">機器學習之Overfitting和Underfitting</a>
                         </li>
                     </big>
                 </ul>
