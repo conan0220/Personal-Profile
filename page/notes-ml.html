@@ -142,6 +142,18 @@
                 <p>
                     <img src="../img/demo-of-linear-regression.png" alt="Linear Regression">
                 </p>
+                <h3 class="title">判斷模型的好壞</h3>
+                <p>
+                    迴歸模型常用的損失函數有兩種 均方誤差 MSE ( Mean Square Error )、均方根誤差 RMSE ( Root Mean Square Error )。
+                </p>
+                <p>
+                    均方誤差 算法為，將 模型預測值 跟 標籤 的差平方 加起來 再除於資料數量。只是這個算法有個小問題，經過平方後 我們無法解釋數值單位的意義。Ex. 公尺的平方 公斤的平方 我們看不出意義。
+                </p>
+                <img src="../img/MSE.png" alt="MSE image">
+                <p>
+                    為了解決單位上的問題，我們把均方誤差的值開根號來處理 即為 均方根誤差。
+                </p>
+                <img src="../img/RMSE.png" alt="RMSE image">
             </section>
             <section>
                 <h2 class="title">Bias & Variance</h2>
