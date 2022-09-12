@@ -157,7 +157,7 @@
                 <h3 class="title">遠端版本庫</h3>
                 <p>
                     新增遠端版本庫
-                    <code>git remote add &lt;簡稱&gt; &lt;url&gt;</code>
+                    <code>git remote add &lt;遠端簡稱&gt; &lt;url&gt;</code>
                 </p>
                 <p>
                     檢視已經設定好的遠端版本庫
@@ -200,6 +200,10 @@
                     合併分支
                     <code>git merge &lt;分支名&gt; # 合併到當前分支</code>
                 </p>
+                <p>
+                    將本地分支推送到 Git 中的遠端倉庫
+                    <code>git push -u &lt;遠端簡稱&gt; &lt;分支名&gt;</code>
+                </p>
                 <table>
                     <caption style="caption-side: top; color: white;">一些常用選項</caption>
                     <colgroup>
@@ -240,6 +244,10 @@
                         <tr>
                             <td><p><code>-a</code></p></td>
                             <td><p>--all 所有</p></td>
+                        </tr>
+                        <tr>
+                            <td><p><code>-u</code></p></td>
+                            <td><p>參數 -u 等同於 --set-upstream，設定 upstream 可以使分支開始追蹤指定的遠端分支。第二次以後要上傳分支時，就只需要透過 git push 就可以了，不必再帶 遠端簡稱 跟 分支名 等參數</p></td>
                         </tr>
                     </tbody>
                 </table>
